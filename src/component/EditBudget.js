@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box } from "../styles/ExpenseFormStyle";
+import { Box } from "../styles/PlannerStyling";
 
 function EditBudget(props) {
   const [value, setValue] = useState(props.budget);

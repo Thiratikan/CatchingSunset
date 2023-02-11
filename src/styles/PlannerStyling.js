@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Form = styled.div`
   background: transparent;
+  position: absolute;
   .budget-display {
     display: flex;
     justify-content: center;

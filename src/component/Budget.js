@@ -1,49 +1,32 @@
-import React from "react";
-import Budget from "./Budget";
-import Remaining from "./Remaining";
-import Spending from "./Spending";
-import ExpenseList from "./ExpenseList";
-import AddExpenseForm from "./AddExpenseForm";
-import { Card, Form, Box } from "../styles/PlannerStyling";
-import { AppProvider } from "../context/AppContext";
+import React, { useState, useContext } from "react";
+import { AppContext } from "../context/AppContext";
+import ViewBudget from "./ViewBudget";
+import EditBudget from "./EditBudget";
 
-function Planner() {
+function Budget() {
+  const { budget, dispatch } = useContext(AppContext);
+  const [edit, setEdit] = useState(false);
+
+  const handleEditClick = () => {
+    setEdit(true);
+  };
+
+  const handleSaveClick = (value) => {
+    dispatch({
+      type: "SET_BUDGET",
+      payload: value,
+    });
+    setEdit(false);
+  };
   return (
-    <AppProvider>
-      <Form>
-        <Box>
-          <h1>Budget Planner</h1>
-          <div className="box">
-            <div>
-              <Budget />
-            </div>
-            <div>
-              <Remaining />
-            </div>
-            <div>
-              <Spending />
-            </div>
-          </div>
-        </Box>
-
-        <div className="budget-display">
-          <Card width="500px" height="550px">
-            <div className="card">
-              <p>Expenses</p>
-              <ExpenseList />
-            </div>
-          </Card>
-
-          <Card width="450px" height="400px">
-            <div className="card">
-              <p>Add Expense</p>
-              <AddExpenseForm />
-            </div>
-          </Card>
-        </div>
-      </Form>
-    </AppProvider>
+    <>
+      {edit ? (
+        <EditBudget handleSaveClick={handleSaveClick} budget={budget} />
+      ) : (
+        <ViewBudget handleEditClick={handleEditClick} budget={budget} />
+      )}
+    </>
   );
 }
 
-export default Planner;
+export default Budget;

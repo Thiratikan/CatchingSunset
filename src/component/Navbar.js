@@ -17,7 +17,13 @@ function Navbar() {
         </section>
 
         <ul>
-          <li>Planner</li>
+          <li
+            onClick={() => {
+              navigate("/planner");
+            }}
+          >
+            Planner
+          </li>
           <li>About</li>
         </ul>
       </div>
