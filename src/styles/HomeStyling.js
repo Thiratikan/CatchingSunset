@@ -8,6 +8,36 @@ export const Main = styled.div`
     object-fit: cover;
     position: fixed;
   }
+  img {
+    width: 50px;
+    margin-left: 20px;
+  }
+  .nav {
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    padding: 4em;
+    display: flex;
+  }
+  section {
+    display: flex;
+    cursor: pointer;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+  }
+  li {
+    cursor: pointer;
+    font-size: 2em;
+    margin-right: 1em;
+  }
+  p {
+    margin-left: 10px;
+    margin-right: 20em;
+    font-weight: 700;
+    font-size: 2.5em;
+  }
 `;
 
 export const Content = styled.div`

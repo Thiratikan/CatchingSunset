@@ -1,4 +1,4 @@
-# FlyingRabbit
+# Catching Sunset
 
 This project is a travel planner application
 
