@@ -21,6 +21,7 @@ export const Content = styled.div`
     flex-direction: column;
     padding: 10em;
   }
+
   h1 {
     font-size: 150px;
   }
@@ -32,5 +33,34 @@ export const Content = styled.div`
     font-size: 30px;
     margin-top: 2em;
     cursor: pointer;
+    /* Adjust as needed */
+  }
+
+  .typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: none;
+    }
   }
 `;
