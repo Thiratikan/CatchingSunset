@@ -12,7 +12,7 @@ function Planner() {
     <AppProvider>
       <Form>
         <Box>
-          <h1>Budget Planner</h1>
+          <h1 id="planner">Budget Planner</h1>
           <div className="box">
             <div>
               <Budget />

@@ -1,7 +1,3 @@
 # Catching Sunset
 
-This project is a travel planner application
-
-## Available Scripts
-
-In the project directory, you can run:
+CatchingSunset is a web application created by React.js. The application allows users to randomly pick their destination and plan their budget for the trip.

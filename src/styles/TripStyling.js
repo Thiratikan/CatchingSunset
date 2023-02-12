@@ -2,12 +2,16 @@ import styled from "styled-components";
 
 export const Head = styled.div`
   position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 55rem;
   h1 {
     font-family: "Dancing Script", cursive;
     color: white;
     font-size: 100px;
     text-align: center;
-    margin-top: 1em;
+    margin-top: 0.25em;
+    padding-top: 0.5em;
   }
   section {
     margin-top: 5em;
@@ -24,13 +28,15 @@ export const Head = styled.div`
   div {
     display: flex;
     justify-content: center;
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
+    margin-top: 5em;
+    margin-bottom: 5em;
   }
   p {
     color: white;
     font-family: "Roboto", sans-serif;
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
   }
 
   button {

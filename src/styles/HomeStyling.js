@@ -32,6 +32,10 @@ export const Main = styled.div`
     font-size: 2em;
     margin-right: 1em;
   }
+  a {
+    text-decoration: none;
+    color: white;
+  }
   p {
     margin-left: 10px;
     margin-right: 20em;

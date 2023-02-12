@@ -17,9 +17,15 @@ function Navbar() {
         </section>
 
         <ul>
-          <li>Trip</li>
-          <li>Planner</li>
-          <li>About</li>
+          <li>
+            <a href="#trip">Trip</a>
+          </li>
+          <li>
+            <a href="#planner">Planner</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
         </ul>
       </div>
     </Main>

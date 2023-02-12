@@ -130,6 +130,7 @@ export const Box = styled.div`
     color: white;
   }
   h1 {
+    margin-top: 1em;
     font-family: "Dancing Script", cursive;
     color: white;
     font-size: 100px;

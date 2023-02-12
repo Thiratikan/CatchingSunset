@@ -11,7 +11,7 @@ function Trip() {
   };
   return (
     <Head>
-      <h1>Random Destination</h1>
+      <h1 id="trip">Random Destination</h1>
 
       <section>
         <img src="/img/beach.jpg" alt="" />
@@ -23,7 +23,7 @@ function Trip() {
       <div>
         <button onClick={handleClick}>LET'S GO</button>
       </div>
-      <div>{randomName && <p>Destination: {randomName}</p>}</div>
+      {randomName && <p>Destination: {randomName}</p>}
     </Head>
   );
 }
