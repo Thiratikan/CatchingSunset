@@ -24,7 +24,7 @@ function Navbar() {
             <a href="#planner">Planner</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#about">Contact</a>
           </li>
         </ul>
       </div>
