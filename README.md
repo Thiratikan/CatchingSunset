@@ -4,4 +4,4 @@ CatchingSunset is a web application created by React.js. The application allows 
 
 ## Project :
 
-![Alt text](/img/sunset.gif "CatchingSunset")
+![Alt text](/public/img/sunset.gif "CatchingSunset")
