@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Head } from "../styles/TripStyling";
 import item from "../Data.json";
 
