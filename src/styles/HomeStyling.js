@@ -42,6 +42,24 @@ export const Main = styled.div`
     font-weight: 700;
     font-size: 2.5em;
   }
+
+  @media only screen and (max-width: 600px) {
+    .nav {
+      padding: 1em;
+      padding-top: 2em;
+    }
+    p {
+      font-size: 1.5em;
+      margin-right: 1em;
+    }
+    li {
+      font-size: 1.25em;
+      margin-right: 0.25em;
+    }
+    img {
+      width: 30px;
+    }
+  }
 `;
 
 export const Content = styled.div`
@@ -67,7 +85,6 @@ export const Content = styled.div`
     font-size: 30px;
     margin-top: 2em;
     cursor: pointer;
-    /* Adjust as needed */
   }
 
   .typewriter {
@@ -95,6 +112,23 @@ export const Content = styled.div`
     }
     50% {
       border-color: none;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .font {
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 50px;
+      margin-top: 5em;
+    }
+    h3 {
+      font-size: 30px;
+    }
+    h4 {
+      font-size: 25px;
+      margin-top: 2em;
     }
   }
 `;
