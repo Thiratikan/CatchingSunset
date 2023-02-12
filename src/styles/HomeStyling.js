@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Main = styled.div`
-  height: 100vh;
+  height: 10em;
   video {
     width: 100%;
     height: 100%;
@@ -13,7 +13,7 @@ export const Main = styled.div`
     margin-left: 20px;
   }
   .nav {
-    position: absolute;
+    position: relative;
     font-family: "Roboto", sans-serif;
     color: white;
     padding: 4em;
@@ -41,7 +41,7 @@ export const Main = styled.div`
 `;
 
 export const Content = styled.div`
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   .font {

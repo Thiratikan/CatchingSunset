@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Form = styled.div`
   background: transparent;
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   .budget-display {
@@ -35,6 +35,7 @@ export const Card = styled.div`
     flex-direction: column;
   }
   p {
+    margin: 0px;
     font-size: 40px;
     margin-bottom: 50px;
     color: white;
