@@ -8,6 +8,9 @@ export const Main = styled.div`
     object-fit: cover;
     position: fixed;
   }
+  video::-webkit-media-controls {
+    display: none !important;
+  }
   img {
     width: 50px;
     margin-left: 20px;
