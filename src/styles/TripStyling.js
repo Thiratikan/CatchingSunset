@@ -107,13 +107,13 @@ export const Head = styled.div`
     box-sizing: border-box;
   }
   @media only screen and (max-width: 600px) {
-    height: 40rem;
+    height: 37rem;
     width: 100%;
     h1 {
       font-size: 65px;
     }
     img {
-      height: 5em;
+      height: 6em;
       width: 6.5em;
       margin-right: 0px;
     }
@@ -124,6 +124,7 @@ export const Head = styled.div`
       margin-top: 3em;
     }
     div {
+      margin-top: 4em;
       margin-bottom: 2em;
     }
   }

@@ -16,4 +16,12 @@ export const Style = styled.div`
     height: 7em;
     padding-top: 2em;
   }
+  @media only screen and (max-width: 600px) {
+    img {
+      height: 30px;
+    }
+    div {
+      height: 5.5em;
+    }
+  }
 `;

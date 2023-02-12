@@ -7,19 +7,23 @@ export const Form = styled.div`
   height: 100%;
   .budget-display {
     display: flex;
-
+    flex-direction: row;
     justify-content: center;
     width: 100%;
     margin-top: 60px;
   }
+  @media only screen and (max-width: 600px) {
+    .budget-display {
+    }
+  }
 `;
 
 export const Card = styled.div`
+  display: flex;
+  flex-direction: column;
   .card {
     display: flex;
     flex-direction: column;
-    width: ${(props) => props.width};
-    height: ${(props) => props.height};
     overflow: hidden;
     border-radius: 2em;
     text-decoration: none;
@@ -41,8 +45,33 @@ export const Card = styled.div`
     color: white;
     font-family: "Roboto", sans-serif;
   }
+  .expense {
+    width: 400px;
+    height: 450px;
+  }
+  .AddEx {
+    width: 530px;
+    height: 450px;
+  }
   @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .card {
+      margin-right: 2px;
+      padding: 1em 1.5em;
+    }
+    .expense {
+      width: 130px;
+      height: 50px;
+    }
+    .AddEx {
+      width: 190px;
+      height: 450px;
+    }
     p {
+      font-size: 20px;
+      margin-bottom: 20px;
     }
   }
 `;
@@ -74,7 +103,16 @@ export const Budget = styled.div`
     font-size: 20px;
   }
   @media only screen and (max-width: 600px) {
-    div {
+    h3 {
+      font-size: 13px;
+    }
+    h2 {
+      font-size: 13px;
+      margin-right: 10px;
+      margin-bottom: 13px;
+    }
+    .delete-btn {
+      font-size: 12px;
     }
   }
 `;
@@ -103,6 +141,19 @@ export const ExpenseStyle = styled.div`
     margin-top: 10px;
     font-size: 20px;
   }
+  @media only screen and (max-width: 600px) {
+    input {
+      width: 120px;
+    height: 20px;
+    font-size: 0.75em;
+    margin-bottom: 10px;
+    }
+    button{
+      margin-top: 3px;
+      width: 40px;
+    height: 20px;
+    font-size: 12px;
+    }
 `;
 
 export const Box = styled.div`

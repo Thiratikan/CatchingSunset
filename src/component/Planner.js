@@ -27,17 +27,22 @@ function Planner() {
         </Box>
 
         <div className="budget-display">
-          <Card width="500px" height="550px">
+          <Card>
             <div className="card">
-              <p>Expenses</p>
-              <ExpenseList />
+              <div className="expense">
+                <p>Expenses</p>
+
+                <ExpenseList />
+              </div>
             </div>
           </Card>
 
-          <Card width="450px" height="450px">
-            <div className="card">
-              <p>Add Expense</p>
-              <AddExpenseForm />
+          <Card>
+            <div className="AddEx">
+              <div className="card">
+                <p>Add Expense</p>
+                <AddExpenseForm />
+              </div>
             </div>
           </Card>
         </div>
