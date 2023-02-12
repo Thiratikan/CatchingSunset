@@ -9,6 +9,7 @@ function Home() {
     <Main>
       <video src={videoBG} autoPlay loop muted />
       <Navbar />
+      <Planner />
     </Main>
   );
 }

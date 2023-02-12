@@ -1,3 +1,4 @@
+import React from "react";
 import { Budget } from "../styles/PlannerStyling";
 import { AppContext } from "../context/AppContext";
 import { useContext } from "react";

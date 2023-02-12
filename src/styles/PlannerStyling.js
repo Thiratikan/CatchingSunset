@@ -3,8 +3,11 @@ import styled from "styled-components";
 export const Form = styled.div`
   background: transparent;
   position: absolute;
+  width: 100%;
+  height: 100%;
   .budget-display {
     display: flex;
+
     justify-content: center;
     width: 100%;
     margin-top: 60px;
@@ -20,7 +23,7 @@ export const Card = styled.div`
     overflow: hidden;
     border-radius: 2em;
     text-decoration: none;
-    background: white;
+    background-color: rgba(0, 0, 0, 0.5);
     margin: 1em;
     padding: 2.75em 2.5em;
     box-shadow: 0 1.5em 2.5em -0.5em rgba(#000000, 0.1);
@@ -28,10 +31,14 @@ export const Card = styled.div`
   }
   ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
   }
   p {
     font-size: 40px;
     margin-bottom: 50px;
+    color: white;
+    font-family: "Roboto", sans-serif;
   }
 `;
 
@@ -43,21 +50,23 @@ export const Budget = styled.div`
     width: 200px;
     margin-right: 150px;
     margin-bottom: 15px;
-    color: #5e5c5b;
+    color: white;
     font-size: 25px;
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: light;
   }
   h3 {
-    color: #5e5c5b;
+    color: white;
     font-size: 25px;
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: light;
   }
   .delete-btn {
     margin-left: 5px;
     margin-top: -13px;
     cursor: pointer;
+    color: white;
+    font-size: 20px;
   }
 `;
 
@@ -66,18 +75,21 @@ export const ExpenseStyle = styled.div`
     width: 360px;
     height: 50px;
     margin-bottom: 30px;
-    border: 2px solid #000;
+    border: 2px solid white;
     outline: none;
     background: none;
     padding: 10px;
     border-radius: 10px;
     font-size: 1.2em;
   }
+  placeholder {
+    color: white;
+  }
   button {
     width: 150px;
     height: 40px;
-    background: #f74d19;
-    color: #fff;
+    background: white;
+    color: black;
     border: #fff;
     margin-top: 10px;
     font-size: 20px;
@@ -92,8 +104,8 @@ export const Box = styled.div`
     align-content: space-between;
   }
   span {
-    background-color: #f74d19;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 0.125em;
     font-weight: 400;
     display: inline-block;
@@ -107,40 +119,40 @@ export const Box = styled.div`
     border-radius: 0.25em;
     text-decoration: none;
     text-align: center;
-    background: white;
+    background: rgba(0, 0, 0, 0.5);
     padding: 10px;
     padding-top: 15px;
     margin-right: 30px;
     margin-top: 80px;
-    font-family: "Montserrat Alternates", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
+    color: white;
   }
   h1 {
     font-family: "Dancing Script", cursive;
     color: white;
     font-size: 100px;
     text-align: center;
-    padding-top: 100px;
   }
   input {
-    background-color: #f74d19;
+    background-color: white;
     color: white;
     border: none;
     border-radius: 0.125em;
     height: 30px;
     width: 100px;
-    font-family: "Montserrat Alternates", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     text-align: center;
     font-size: 22px;
     margin-left: 10px;
   }
-  input::placeholder {
+  ::placeholder {
     color: white;
   }
   button {
     margin-left: 8px;
-    font-family: "Montserrat Alternates", sans-serif;
+    font-family: "Roboto", sans-serif;
     border: none;
     width: 45px;
     height: 25px;

@@ -34,7 +34,7 @@ function Planner() {
             </div>
           </Card>
 
-          <Card width="450px" height="400px">
+          <Card width="450px" height="450px">
             <div className="card">
               <p>Add Expense</p>
               <AddExpenseForm />
