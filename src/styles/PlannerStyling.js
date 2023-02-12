@@ -41,6 +41,10 @@ export const Card = styled.div`
     color: white;
     font-family: "Roboto", sans-serif;
   }
+  @media only screen and (max-width: 600px) {
+    p {
+    }
+  }
 `;
 
 export const Budget = styled.div`
@@ -68,6 +72,10 @@ export const Budget = styled.div`
     cursor: pointer;
     color: white;
     font-size: 20px;
+  }
+  @media only screen and (max-width: 600px) {
+    div {
+    }
   }
 `;
 
@@ -162,5 +170,26 @@ export const Box = styled.div`
     background-color: #f74d19;
     font-weight: 700;
     color: white;
+  }
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 65px;
+    }
+    .box {
+      flex-direction: row;
+    }
+    p {
+      display: grid;
+      font-size: 20px;
+      width: 110px;
+      height: 130px;
+      margin-right: 10px;
+    }
+    span {
+      width: 90px;
+    }
+    button {
+      margin-left: 1.75em;
+    }
   }
 `;

@@ -54,7 +54,7 @@ export const Main = styled.div`
     }
     li {
       font-size: 1.25em;
-      margin-right: 0.25em;
+      margin-right: 0.5em;
     }
     img {
       width: 30px;

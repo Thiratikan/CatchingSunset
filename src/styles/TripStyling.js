@@ -106,4 +106,25 @@ export const Head = styled.div`
     padding: 0;
     box-sizing: border-box;
   }
+  @media only screen and (max-width: 600px) {
+    height: 40rem;
+    width: 100%;
+    h1 {
+      font-size: 65px;
+    }
+    img {
+      height: 5em;
+      width: 6.5em;
+      margin-right: 0px;
+    }
+    button {
+      font-size: 1.25em;
+    }
+    section {
+      margin-top: 3em;
+    }
+    div {
+      margin-bottom: 2em;
+    }
+  }
 `;
