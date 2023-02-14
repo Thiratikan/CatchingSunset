@@ -6,8 +6,6 @@ CatchingSunset is a web application created by React.js. The application allows 
 
 ![Alt text](/public/img/sunset.gif "CatchingSunset")
 
-https://github.com/Thiratikan/CatchingSunset.git
-
 ## Inspiration
 
 Of course, everyone loves to travel and see new places. Plus, seeing the sunset in a different location can be inspiring. That's why the web application is called "CathingSunset." However, there are so many stunning places to choose from. It will be easier if we can just random the country and visit. Take risks, have some fun, see the sunset, and get to know the new world and experiences!
